@@ -1,12 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Adoption</title>
-</head>
-<body>
-    
-</body>
+    <!-- DasiUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="w-10/12 mx-auto">
+        <!-- nav bar -->
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="flex gap-2">
+              <img src="./images/logo.webp" alt="" />
+              <p class="text-xl font-bold">Peddy</p>
+            </div>
+          </div>
+          <div class="navbar-center lg:flex">
+            <ul class="menu menu-horizontal px-1 text-gray-500">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <img
+              class="h-8 w-8 bg-gray-200 rounded-full border-2 border-gray-500 shadow-lg"
+              src="https://img.icons8.com/?size=160&id=111473&format=png"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Banner section  -->
+      <section class="bg-color-red">
+        <div
+          class="w-10/12 mx-auto text-center flex flex-col items-center justify-center mt-10"
+        >
+          <p class="text-lg font-medium text-gray-500 flex items-center gap-2">
+            Bringing Families Together
+            <img
+              class="w-5 h-5"
+              src="https://cdn-icons-png.flaticon.com/128/599/599502.png"
+              alt=""
+            />
+          </p>
+
+          <h1 class="w-8/12 text-5xl font-bold mt-2 text-center leading-tight mx-auto">
+            Your Path to Adoption <br> Starts Here
+          </h1>
+          
+          <p class="mt-2 max-w-lg mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+            quisquam. Cupiditate vero veritatis dignissimos, cum optio inventore
+            sit nesciunt nam.
+          </p>
+          <button class="btn mt-6 bg-teal-300 ">View more</button>
+          <img src="./images/pet.webp" alt="" class="md:w-8/12 lg:w-7/12 mt-10" />
+        </div>
+      </section>
+
+      <section>
+        <div class="w-10/12 mx-auto item-center flex flex-col text-center justify-center mt-10 ">
+            <h1 class="text-2xl font-bold">Adopt Your Best Friend</h1>
+            <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui temporibus asperiores reiciendis porro nostrum enim sapiente exercitationem perspiciatis ab consequuntur?</p>
+        </div>
+      </section>
+
+      <!-- This section make by JS folder -->
+      <section>
+        
+      </section>
+    </main>
+   
+    <!-- Footer section -->
+    <footer class="bg-black text-white py-10">
+        <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Column 1 - About Us & Social Media -->
+          <div>
+            <h2 class="text-xl font-bold mb-3">About Us</h2>
+          <div class=" flex flex-col gap-2">
+            <p class="text-gray-400 ">Address: Dhaka,Bangladesh</p>
+            <p class="text-gray-400 ">Phone: 015******210 </p>
+            <p class="text-gray-400 ">Email: peddy123@gmail.com</p>
+            <p class="text-gray-400 ">Opening Hours: 9.00AM-10.00PM</p>
+          
+          </div>
+           
+            <div class="flex gap-4 mt-4">
+              <a href="#" class="hover:text-gray-400">
+                <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook">
+              </a>
+              <a href="#" class="hover:text-gray-400">
+                <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="Twitter">
+              </a>
+              <a href="#" class="hover:text-gray-400">
+                <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="Instagram">
+              </a>
+              <a href="#" class="hover:text-gray-400">
+                <img class="w-6 h-6" src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+      
+         
+          <div>
+            <h2 class="text-xl font-bold mb-3">Useful Links</h2>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-white">Home</a></li>
+              <li><a href="#" class="hover:text-white">About us</a></li>
+              <li><a href="#" class="hover:text-white">Animals</a></li>
+              <li><a href="#" class="hover:text-white">Foundation</a></li>
+              <li><a href="#" class="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+      
+        
+          <div>
+            <h1 class="text-xl font-bold mb-3">Drop Messsage</h1>
+            <input
+              type="email"
+              class="w-full p-2 bg-gray-400 text-black rounded-md mt-4"
+              placeholder="Enter your email"
+            />
+            <button class="mt-3 w-full bg-teal-300 hover:bg-green-400 font-bold text-black py-2 rounded-md">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
 </html>
