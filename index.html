@@ -25,9 +25,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <!-- Css link -->
-    <link rel="stylesheet" href="./style.css" />
-
     <!-- DasiUI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -129,8 +126,9 @@
         <div class="my-12 w-10/12 mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
             <div class="lg:col-span-3">
-              <div>
+              <div id="loader" class="hidden">
                 <!-- spinner -->
+                <span class="loading loading-bars loading-lg items-center"></span>
               </div>
               <!-- cards -->
               <div
@@ -249,6 +247,8 @@
     </dialog>
 
     <!-- link Js -->
+    <script src="./active.js"></script>
+    <script src="./spinner.js"></script>
     <script src="./API.js"></script>
   </body>
 </html>
